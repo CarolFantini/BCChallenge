@@ -1,0 +1,33 @@
+<h2>Register - Patient</h2>
+<form class="row g-3" autocomplete="off" novalidate #formPatient="ngForm" (submit)="onSubmit(formPatient)">
+  <input type="hidden" name="patientId" [value]="service.formData.id" />
+  <div class="col-md-4">
+    <label for="patientName" class="form-label">Name</label>
+    <input type="text" class="form-control" id="patientName" minlength="1" maxlength="254" name="name" #name="ngModel"
+      [(ngModel)]="service.formData.name" [class.invalid]="name.invalid && name.touched" required>
+  </div>
+  <div class="col-md-4">
+    <label for="patientBirthDate" class="form-label">Birth Date</label>
+    <input type="date" class="form-control" id="patientBirthDate" name="patientBirthDate" #birthDate="ngModel"
+      [(ngModel)]="service.formData.birthDate" [class.invalid]="birthDate.invalid && birthDate.touched" required>
+  </div>
+  <div class="col-md-4">
+    <label for="cpfPatient" class="form-label">CPF</label>
+    <input type="text" class="form-control" id="cpfPatient" mask="000.000.000-00" name="cpf" #cpf="ngModel"
+      [(ngModel)]="service.formData.cpf" minlength="11" maxlength="14" [class.invalid]="cpf.invalid && cpf.touched"
+      onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+  </div>
+  <div class="col-md-8">
+    <label for="doctorsList" class="form-label">Doctor</label>
+    <select class="form-select" name="doctorsList" id="doctorsList" name="doctor" #doctor="ngModel"
+      [(ngModel)]="service.formData.doctor" [class.invalid]="doctor.invalid && doctor.touched" required>
+      <option *ngFor="let doctor of doctors" value="{{doctor.id}}"
+        selected="{{doctor.id === service.formData.doctor.id}}">
+        {{doctor.name}} | {{doctor.crm}}-{{doctor.crmUf}}</option>
+    </select>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-danger btn-cancel" type="button" (click)="cancelDialog();">Cancel</button>
+    <button class="btn btn-success" type="submit" [disabled]="formPatient.invalid">Submit</button>
+  </div>
+</form>

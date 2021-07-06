@@ -1,0 +1,39 @@
+<div class="toolbar" role="banner">
+</div>
+
+<div class="content" role="main">
+  <a href="/home">
+    <div class="card highlight-card">
+      <span>Built Code Challenge</span>
+    </div>
+  </a>
+
+  <table class="table table-hover">
+    <thead>
+      <h2>List of doctors</h2>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">CRM</th>
+        <th scope="col">#</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let doctor of service.listDoctors;">
+        <td style="display: none;">{{doctor.id}}</td>
+        <td>{{doctor.name}}</td>
+        <td>{{doctor.crm}}-{{doctor.crmUf}}</td>
+        <td scope="row">
+          <i class="far fa-edit icon-edit" (click)="editDoctor(doctor);"></i>
+          <i class="far fa-trash-alt icon-remove" (click)="removeDoctor(doctor);"></i>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="card-container">
+    <div class="card" tabindex="0" (click)="registerDoctor()">
+      <span>Register</span>
+    </div>
+  </div>
+
+  <router-outlet></router-outlet>
