@@ -3,7 +3,7 @@
 ### English
 Technical challenge developed for a fullstack developer position.
 
-Technologies used: .NET 5, Entity Framework Core 5.0.7, PostgreSQL 13, Angular 12.1 and Swagger.
+Technologies used: .NET 5, Entity Framework Core 5.0.7, PostgreSQL 13, Angular 12.1 and OpenAPI 3.0.1 (Swagger).
 
 Challenge Description:
 - Domain modeling
@@ -73,7 +73,7 @@ Choose to deliver the test using PostgreSQL.
 ### Português
 Desafio técnico desenvolvido para vaga de desenvolvedor .NET.
 
-Tecnologias usadas: .NET 5, Entity Framework Core 5.0.7, PostgreSQL 13, Angular 12.1 e Swagger.
+Tecnologias usadas: .NET 5, Entity Framework Core 5.0.7, PostgreSQL 13, Angular 12.1 e OpenAPI 3.0.1 (Swagger).
 
 Descrição do Desafio:
 - Modelagem do domínio
