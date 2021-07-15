@@ -82,9 +82,10 @@ Descrição do Desafio:
 ![Screenshot_3](https://user-images.githubusercontent.com/43019285/124798462-bf3c8600-df29-11eb-97fa-4e84a734a5a7.png)
 
 ## License
-[GPL v3](https://github.com/CarolFantini/VHChallenge/blob/main/LICENSE)
+<a href="https://github.com/CarolFantini/BCChallenge/blob/main/LICENSE">
+<img alt="License" src="https://img.shields.io/github/license/CarolFantini/BCChallenge?color=green">
+</a>
   
 ## Author
-- LinkedIn: [Carol Fantini](https://linkedin.com/in/carolfantini)
-  
-- Twitter: [@carol_fantini](https://twitter.com/carol_fantini)
+<a href="https://linkedin.com/in/carolfantini"><img alt="LinkedIn" title="LinkedIn" src="https://img.shields.io/badge/-LinkedIn-1DA1F2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+  <a href="https://twitter.com/carol_fantini"><img alt="Twitter" title="Twitter" src="https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/></a>
