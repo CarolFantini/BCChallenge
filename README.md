@@ -71,7 +71,7 @@ Mask/Format CRM in the registration and listing of physicians (123456-SP);
 Choose to deliver the test using PostgreSQL.
 
 ### Português
-Desafio técnico desenvolvido para vaga de desenvolvedor .NET.
+Desafio técnico desenvolvido para vaga de desenvolvedor fullstack.
 
 Tecnologias usadas: .NET 5, Entity Framework Core 5.0.7, PostgreSQL 13, Angular 12.1 e OpenAPI 3.0.1 (Swagger).
 
